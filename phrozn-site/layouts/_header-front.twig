@@ -1,0 +1,29 @@
+{% extends '_header.twig' %}
+
+{% block header %}
+{{ parent() }}
+<div id="secondary">
+    <div class="content clearfix">
+        <a href="http://framework.zend.com">Zend Framework</a> |
+        <a href="">ZF2 Development Wiki</a>
+        <a href="">Official ZF2 Deb Blog</a>
+    </div>
+</div>
+<div id="tertiary">
+    <div class="content clearfix">
+        <div class="left">
+            <h2>Getting Started With ZF2 Components</h2>
+            <p>
+                First, make sure you have the package management tool
+                pyrus installed and working.
+            </p>
+        </div>
+        <div class="right">
+            <code>
+                pyrus channel-discover http://zfcampus.org/packages/
+                pyrus install zf2/Zend_Http-dev
+            </code>
+        </div>
+    </div>
+</div>
+{% endblock %}

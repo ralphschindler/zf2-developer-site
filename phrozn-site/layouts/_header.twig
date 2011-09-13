@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Webpage</title>
+        <link href="styles/default.css" rel="stylesheet" media="screen, projection" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            {% block header %}
+            <div id="primary">
+                <div class="content clearfix">
+                    <h1>
+                        <img src="/media/img/zf2logo.png" alt="ZF2" />
+                        <span>
+                            @ ZFCampus.org
+                        </span>
+                    </h1>
+                    <span id="nagivation">
+                        Pyrus | Packages
+                    </span>
+                </div>
+            </div>
+            {% endblock %}
+        </div>
