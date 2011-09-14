@@ -1,0 +1,5 @@
+zf2_path   = path/to/zf2
+pyrus_path = path/to/pyrus
+channel    = zfcampus.org/packages
+release    = 2.0.0dev#
+with_phar  = true
