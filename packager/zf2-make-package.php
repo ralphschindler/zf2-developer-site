@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/bin/env php -dphar.readonly=0
 <?php
 
 define('DS', DIRECTORY_SEPARATOR);
@@ -50,8 +50,8 @@ if (strpos(shell_exec($pyrus_path . ' list-channels'), $channel) === false) {
     script_exit('The channel ' . $channel . ' is not in your channel list');
 }
 
-if (isset($ini['with_phar']) && $ini['with_phar'] == true && ini_get('phar.readonly') == false) {
-    script_exit('To build with phar, PHP must have phar.readonly=1');
+if (isset($ini['with_phar']) && $ini['with_phar'] == true && ini_get('phar.readonly') == 'On') {
+    script_exit('To build with phar, PHP must have phar.readonly=0');
 }
 
 $library_component_path = str_replace('_', DS, $package_name);
