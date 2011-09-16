@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Webpage</title>
+        <link href="/styles/default.css" rel="stylesheet" media="screen, projection" type="text/css" />
+        <link href="/styles/custom-sh.css" rel="stylesheet" media="screen, projection" type="text/css" />
+        <link href="/styles/index.css" rel="stylesheet" media="screen, projection" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css'>
+        <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css" rel="stylesheet" type="text/css" />
+        <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+        <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+        <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="header">
+                        <div id="primary">
+                <div class="content clearfix">
+                    <h1>
+                        <img src="/media/img/zf2logo.png" alt="ZF2" />
+                        <span id="local-site-name">
+                            @ZFCampus.org
+                        </span>
+                    </h1>
+                    <!-- <span id="nagivation">
+                        Pyrus | Packages
+                    </span> -->
+                </div>
+            </div>
+            
+<div id="secondary">
+    <div class="content clearfix">
+        <a href="http://framework.zend.com">Zend Framework</a> |
+        <a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">ZF2 Development Wiki</a> |
+        <a href="http://framework.zend.com/zf2/blog">Official ZF2 Deb Blog</a>
+    </div>
+</div>
+<div id="tertiary">
+    <div class="content clearfix">
+        <div class="left">
+            <h2>Getting Started With ZF2 Components</h2>
+            <p>
+                First, make sure you have the package management tool
+                pyrus installed and working.  You can get that from
+                <a href="http://pear2.php.net">the pyrus website</a>,
+                but a better option would get the all inclusive one
+                built by Ralph Schindler:
+            </p>
+        </div>
+        <div class="right">
+            <pre class="brush: bash; class-name: custom-sh">
+                pyrus channel-discover zfcampus.org/packages
+                pyrus install zf2/Zend_Http-devel
+            </pre>
+        </div>
+        <pre class="brush: bash">
+            wget https://github.com/ralphschindler/zf2-developer-site/raw/master/bin/pyrus
+        </pre>
+    </div>
+</div>
+        </div>
+
+<div id="content-area">
+    <div class="content clearfix">
+    
+<h1>Installation with Pyrus</h1>
+
+
+<h2>Discover This Channel</h2>
+
+<pre class="brush: bash; class-name: custom-sh">
+pyrus channel-discover zfcampus.org/packages
+</pre>
+    
+<h2>Package Installation</h2>
+    
+<pre class="brush: bash; class-name: custom-sh">
+    pyrus install zf2/Zend_Di-devel    
+</pre>
+
+
+<h2>Install a Package</h2>
+
+<div id="package-install-example">
+    <pre class="brush: bash; class-name: custom-sh">
+        pyrus install zf2/Zend_Component-devel
+    </pre>
+</div>
+
+<ul>
+    <li>Zend_Di</li>
+    <li>Zend_Loader</li>
+    <li>Zend_Http</li>
+    <li>Zend_Stdlib</li>
+    <li>Zend_Uri</li>
+    <li>Zend_Validator</li>
+</ul>
+
+
+</pre>
+
+<h1>Installation By Phar Download</h2>
+
+<h2>Where to download from</h2>
+
+<p>
+If you use the pyrus tool to download the phars, you will be able
+to use the -devel short flag to get the latest possible release.
+</p>
+
+<p>
+Otherwise, browse the <a href="/packages/get/">directory</a> to
+download appropriate packages.
+</p>
+
+<h2>Using Pyrus to Download</h2>
+
+<div id="package-install-example">
+    <pre class="brush: bash; class-name: custom-sh">
+        pyrus download zf2/Zend_Component-devel
+    </pre>
+</div>
+
+<p>
+Using the above mentioned package naming, you can download the phar files to
+your current working directory with this command:
+</p>
+    </div>
+</div>
+
+        <div id="footer">
+            <!-- <div class="content clearfix">
+                License | Copyright | Credits
+            </div> -->
+        </div>
+        <a href="http://github.com/ralphschindler/zfcampus.org"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+        <script type="text/javascript">
+            SyntaxHighlighter.autoloader(
+              'js jscript javascript  http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js',
+              'applescript            http://alexgorbatchev.com/pub/sh/current/scripts/shBrushAppleScript.js',
+              'bash                   http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js'
+            );
+
+            SyntaxHighlighter.all();
+        </script>
+  </body>
+</html>
