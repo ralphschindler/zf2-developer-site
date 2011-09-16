@@ -43,30 +43,7 @@ Package detailed description here (found in README)</d>
   </a>
   <deps>
    <v>2.0.0dev20110916</v>
-   <d>a:1:{s:8:&quot;required&quot;;a:3:{s:3:&quot;php&quot;;a:1:{s:3:&quot;min&quot;;s:5:&quot;5.2.0&quot;;}s:13:&quot;pearinstaller&quot;;a:1:{s:3:&quot;min&quot;;s:7:&quot;2.0.0a1&quot;;}s:7:&quot;package&quot;;a:2:{i:0;a:2:{s:4:&quot;name&quot;;s:25:&quot;Zend_Uri-2.0.0dev20110916&quot;;s:7:&quot;channel&quot;;s:21:&quot;zfcampus.org/packages&quot;;}i:1;a:2:{s:4:&quot;name&quot;;s:28:&quot;Zend_Stdlib-2.0.0dev20110916&quot;;s:7:&quot;channel&quot;;s:21:&quot;zfcampus.org/packages&quot;;}}}}</d>
-  </deps>
- </pi>
- <pi>
-  <p>
-   <n>Zend_Stdlib</n>
-   <c>zfcampus.org/packages</c>
-   <ca xmlns:xlink="rest/c/Default" xlink:href="rest/c/Default">Default</ca>
-   <l>New BSD License</l>
-   <s>Package Zend_Stdlib summary.
-</s>
-   <d>
-Package detailed description here (found in README)</d>
-   <r xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package http://pear.php.net/dtd/rest.package.xsd"/>
-  </p>
-  <a>
-   <r>
-    <v>2.0.0dev20110916</v>
-    <s>devel</s>
-   </r>
-  </a>
-  <deps>
-   <v>2.0.0dev20110916</v>
-   <d>a:1:{s:8:&quot;required&quot;;a:2:{s:3:&quot;php&quot;;a:1:{s:3:&quot;min&quot;;s:5:&quot;5.2.0&quot;;}s:13:&quot;pearinstaller&quot;;a:1:{s:3:&quot;min&quot;;s:7:&quot;2.0.0a1&quot;;}}}</d>
+   <d>a:1:{s:8:&quot;required&quot;;a:3:{s:3:&quot;php&quot;;a:1:{s:3:&quot;min&quot;;s:5:&quot;5.2.0&quot;;}s:13:&quot;pearinstaller&quot;;a:1:{s:3:&quot;min&quot;;s:7:&quot;2.0.0a1&quot;;}s:7:&quot;package&quot;;a:2:{i:0;a:2:{s:4:&quot;name&quot;;s:14:&quot;Zend_Uri-devel&quot;;s:7:&quot;channel&quot;;s:21:&quot;zfcampus.org/packages&quot;;}i:1;a:2:{s:4:&quot;name&quot;;s:17:&quot;Zend_Stdlib-devel&quot;;s:7:&quot;channel&quot;;s:21:&quot;zfcampus.org/packages&quot;;}}}}</d>
   </deps>
  </pi>
  <pi>
@@ -94,11 +71,57 @@ Package detailed description here (found in README)</d>
  </pi>
  <pi>
   <p>
+   <n>Zend_Stdlib</n>
+   <c>zfcampus.org/packages</c>
+   <ca xmlns:xlink="rest/c/Default" xlink:href="rest/c/Default">Default</ca>
+   <l>New BSD License</l>
+   <s>Package Zend_Stdlib summary.
+</s>
+   <d>
+Package detailed description here (found in README)</d>
+   <r xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package http://pear.php.net/dtd/rest.package.xsd"/>
+  </p>
+  <a>
+   <r>
+    <v>2.0.0dev20110916</v>
+    <s>devel</s>
+   </r>
+  </a>
+  <deps>
+   <v>2.0.0dev20110916</v>
+   <d>a:1:{s:8:&quot;required&quot;;a:2:{s:3:&quot;php&quot;;a:1:{s:3:&quot;min&quot;;s:5:&quot;5.2.0&quot;;}s:13:&quot;pearinstaller&quot;;a:1:{s:3:&quot;min&quot;;s:7:&quot;2.0.0a1&quot;;}}}</d>
+  </deps>
+ </pi>
+ <pi>
+  <p>
    <n>Zend_Validator</n>
    <c>zfcampus.org/packages</c>
    <ca xmlns:xlink="rest/c/Default" xlink:href="rest/c/Default">Default</ca>
    <l>New BSD License</l>
    <s>Package Zend_Validator summary.
+</s>
+   <d>
+Package detailed description here (found in README)</d>
+   <r xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package http://pear.php.net/dtd/rest.package.xsd"/>
+  </p>
+  <a>
+   <r>
+    <v>2.0.0dev20110916</v>
+    <s>devel</s>
+   </r>
+  </a>
+  <deps>
+   <v>2.0.0dev20110916</v>
+   <d>a:1:{s:8:&quot;required&quot;;a:2:{s:3:&quot;php&quot;;a:1:{s:3:&quot;min&quot;;s:5:&quot;5.2.0&quot;;}s:13:&quot;pearinstaller&quot;;a:1:{s:3:&quot;min&quot;;s:7:&quot;2.0.0a1&quot;;}}}</d>
+  </deps>
+ </pi>
+ <pi>
+  <p>
+   <n>Zend_Loader</n>
+   <c>zfcampus.org/packages</c>
+   <ca xmlns:xlink="rest/c/Default" xlink:href="rest/c/Default">Default</ca>
+   <l>New BSD License</l>
+   <s>Package Zend_Loader summary.
 </s>
    <d>
 Package detailed description here (found in README)</d>
