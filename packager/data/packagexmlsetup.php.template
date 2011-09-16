@@ -1,1 +1,1 @@
-$package->dependencies['required']->package['zfcampus.org/{PACKAGE_DEPENDENCY}-{PACKAGE_RELEASE}']->save();
+$package->dependencies['required']->package['zfcampus.org/packages/{PACKAGE_DEPENDENCY}-{PACKAGE_RELEASE}']->save();
