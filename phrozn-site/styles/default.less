@@ -117,6 +117,12 @@ ol li {
         h1 a:hover span {
             text-decoration: underline;
         }
+        
+        #local-site-name {
+            top: 30px;
+            font-family: 'Cabin Sketch', cursive;
+            font-size: 1.5em;
+        }
     }
     
     #secondary {
@@ -125,7 +131,7 @@ ol li {
         padding: 20px;
         font-size: 17px;
         color: #fff;
-        background: @color-zfblue-light;
+        background: @color-zfgreen;
 
         :link, :visited, :link:hover, :visited:hover {
             text-decoration: underline;
@@ -137,6 +143,10 @@ ol li {
             color: #ffff86;
             font-size: 15px;
         }
+        
+        .content {
+            text-align: center;
+        }
 
     }
     
@@ -145,7 +155,7 @@ ol li {
         clear: both;
         padding: 12px;
         color: #444;
-        background: @color-zfgreen;
+        border-bottom: 1px solid @color-zfblue-light;
 
         #download {
             padding-top: 10px;
@@ -172,10 +182,11 @@ ol li {
             float: right;
         }
     }
-
-
     
 }
+
+
+
 
 /* Content */
 
@@ -195,8 +206,8 @@ ol li {
     
     clear: both;
     padding: 12px;
-    color: #444;
-    background: @color-zfblue-light;
-    
+/*    color: #444;
+    background: @color-zfblue-light;*/
+    text-align: center;
 }
 

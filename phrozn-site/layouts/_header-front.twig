@@ -5,8 +5,8 @@
 <div id="secondary">
     <div class="content clearfix">
         <a href="http://framework.zend.com">Zend Framework</a> |
-        <a href="">ZF2 Development Wiki</a>
-        <a href="">Official ZF2 Deb Blog</a>
+        <a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">ZF2 Development Wiki</a> |
+        <a href="http://framework.zend.com/zf2/blog">Official ZF2 Deb Blog</a>
     </div>
 </div>
 <div id="tertiary">
@@ -15,15 +15,21 @@
             <h2>Getting Started With ZF2 Components</h2>
             <p>
                 First, make sure you have the package management tool
-                pyrus installed and working.
+                pyrus installed and working.  You can get that from
+                <a href="http://pear2.php.net">the pyrus website</a>,
+                but a better option would get the all inclusive one
+                built by Ralph Schindler:
             </p>
         </div>
         <div class="right">
-            <code>
-                pyrus channel-discover http://zfcampus.org/packages/
-                pyrus install zf2/Zend_Http-dev
-            </code>
+            <pre class="brush: bash; class-name: custom-sh">
+                pyrus channel-discover zfcampus.org/packages
+                pyrus install zf2/Zend_Http-devel
+            </pre>
         </div>
+        <pre class="brush: bash">
+            wget https://github.com/ralphschindler/zf2-developers-site/blob/development/bin/pyrus
+        </pre>
     </div>
 </div>
 {% endblock %}

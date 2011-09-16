@@ -1,0 +1,65 @@
+layout: front.twig
+---
+
+<h1>Installation with Pyrus</h1>
+
+
+<h2>Discover This Channel</h2>
+
+<pre class="brush: bash; class-name: custom-sh">
+pyrus channel-discover zfcampus.org/packages
+</pre>
+    
+<h2>Package Installation</h2>
+    
+<pre class="brush: bash; class-name: custom-sh">
+    pyrus install zf2/Zend_Di-devel    
+</pre>
+
+
+<h2>Install a Package</h2>
+
+<div id="package-install-example">
+    <pre class="brush: bash; class-name: custom-sh">
+        pyrus install zf2/Zend_Component-devel
+    </pre>
+</div>
+
+<ul>
+    <li>Zend_Di</li>
+    <li>Zend_Loader</li>
+    <li>Zend_Http</li>
+    <li>Zend_Stdlib</li>
+    <li>Zend_Uri</li>
+    <li>Zend_Validator</li>
+</ul>
+
+
+</pre>
+
+<h1>Installation By Phar Download</h2>
+
+<h2>Where to download from</h2>
+
+<p>
+If you use the pyrus tool to download the phars, you will be able
+to use the -devel short flag to get the latest possible release.
+</p>
+
+<p>
+Otherwise, browse the <a href="/packages/get/">directory</a> to
+download appropriate packages.
+</p>
+
+<h2>Using Pyrus to Download</h2>
+
+<div id="package-install-example">
+    <pre class="brush: bash; class-name: custom-sh">
+        pyrus download zf2/Zend_Component-devel
+    </pre>
+</div>
+
+<p>
+Using the above mentioned package naming, you can download the phar files to
+your current working directory with this command:
+</p>
