@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+ <p xlink:href="rest/p/zend_stdlib">Zend_Stdlib</p>
+ <c>zfcampus.org/packages</c>
+ <v>2.0.0dev20110916</v>
+ <st>devel</st>
+ <l>New BSD License</l>
+ <m/>
+ <s>Package Zend_Stdlib summary.
+</s>
+ <d>
+Package detailed description here (found in README)</d>
+ <da>2011-09-16 14:59:46</da>
+ <n>Package Zend_Stdlib release notes for version 0.1.0.
+
+Package Zend_Stdlib API release notes for version 0.1.0.</n>
+ <f>42245</f>
+ <g>http://zfcampus.org/packages/get/Zend_Stdlib-2.0.0dev20110916</g>
+ <x xlink:href="package.2.0.0dev20110916.xml"/>
+</r>
