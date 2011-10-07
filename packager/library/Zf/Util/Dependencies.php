@@ -179,10 +179,16 @@ class Dependencies
         $topLevel = $namespaceSegments[0];
 
         // Next, loop through the dependencies to see if any match this 
-        // component namespace or the top-level namespace
+        // component namespace, the top-level namespace, or are in the global 
+        // namespace
         foreach ($dependencies as $index => $dep) {
             if ($dep == $namespace || $dep == $topLevel) {
                 unset($dependencies[$index]);
+                continue;
+            }
+            if (!strstr($dep, '\\')) {
+                unset($dependencies[$index]);
+                continue;
             }
         }
         return $dependencies;
