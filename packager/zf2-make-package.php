@@ -1,6 +1,22 @@
 #!/usr/bin/env php -dphar.readonly=0
 <?php
 
+use Zf\Util\Dependencies;
+
+// Setup include_path and autoloading
+set_include_path(implode(PATH_SEPARATOR, array(
+    __DIR__ . '/library',
+    get_include_path(),
+)));
+spl_autoload_register(function($class) {
+    $class = ltrim($class, '\\');
+    $file = str_replace(array('\\', '_'), DIRECTORY_SEPARATOR, $class) . '.php';
+    if (false === ($realpath = stream_resolve_include_path($file))) {
+        return false;
+    }
+    include_once $realpath;
+});
+
 define('DS', DIRECTORY_SEPARATOR);
 
 // check that we have a package name
@@ -93,8 +109,35 @@ $file_replacements['{PACKAGE_NAME}'] = $package_name;
 $file_replacements['{PACKAGE_RELEASE}'] = $release;
 $file_replacements['{PACKAGE_REQUIRE_DEPENDENCIES}'] = null;
 
-if (file_exists(__DIR__ . DS . 'data' . DS . $package_name . '-info.php')) {
-    $package_info = include __DIR__ . DS . 'data' . DS . $package_name . '-info.php';
+// Attempt to auto-determine dependencies based on use statements, and cache 
+// them to a *-info.php file
+$depsFile = __DIR__ . DS . 'data' . DS . $package_name . '-info.php';
+if (!file_exists($depsFile)) {
+    // Scan code for dependencies
+    $deps = array();
+    $it   = new RecursiveDirectoryIterator($library_component_path);
+    foreach (new RecursiveIteratorIterator($it) as $codeFile) {
+        if (!$codeFile->isFile()) {
+            continue;
+        }
+        $codeFilePath = $codeFile->getRealPath();
+        if ('.php' != substr($codeFilePath, -4)) {
+            continue;
+        }
+
+        $deps += Dependencies::getForFile($codeFilePath);
+    }
+
+    if (count($deps)) {
+        $deps = array_unique($deps);
+        $payload = array('dependencies' => $deps);
+        $payload = '<' . "?php return " . var_export($payload, 1) . ';';
+        file_put_contents($depsFile, $payload);
+    }
+}
+
+if (file_exists($depsFile)) {
+    $package_info = include $depsFile;
     if (isset($package_info['dependencies'])) {
         $packagexmlsetup_content = '<?php' . PHP_EOL;
         foreach ($package_info['dependencies'] as $dependency) {
